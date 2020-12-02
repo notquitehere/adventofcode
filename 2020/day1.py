@@ -24,4 +24,6 @@ def part2(nums):
                     return first_num * i * j
 
 
-print(part2(ip))
+if __name__ == "__main__":
+    print(part1(ip))
+    print(part2(ip))
