@@ -30,6 +30,9 @@ def part1(data, right, down):
 
 
 def part2(data):
+    """
+    Outputs I'm getting: 74, 189, 65, 63, 41 with a solution of 2348179470 this is apparently too high.
+    """
     slopes = [[1,1],[3,1],[5,1],[7,1],[1,2]]
     trees = 1
 
