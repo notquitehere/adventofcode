@@ -21,25 +21,21 @@ def part1(data, right, down):
     line_len = len(data[0])
     location = 0
     trees = 0
-    for l in range(1,len(data),down):
-        location = (location + right) % line_len
+    for l in range(0,len(data),down):
         if data[l][location] == '#':
             trees += 1
+        location = (location + right) % line_len
+
 
     return trees
 
 
 def part2(data):
-    """
-    Outputs I'm getting: 74, 189, 65, 63, 41 with a solution of 2348179470 this is apparently too high.
-    """
     slopes = [[1,1],[3,1],[5,1],[7,1],[1,2]]
     trees = 1
 
     for s in slopes:
-        count = part1(data, s[0], s[1])
-        print(count)
-        trees = trees * count
+        trees *= part1(data, s[0], s[1])
 
     return trees
 
@@ -47,5 +43,3 @@ def part2(data):
 if __name__ == "__main__":
     print(f'Part One Solution: {part1(ip, 3, 1)}')
     print(f'Part Two Solution: {part2(ip)}')
-
-
