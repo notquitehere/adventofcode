@@ -1,5 +1,3 @@
-from functools import reduce
-
 # Load the puzzle input
 with open('day3_ip.txt', 'r') as f:
     ip = [i.strip('\n') for i in f]
@@ -25,7 +23,6 @@ def part1(data, right, down):
         if data[l][location] == '#':
             trees += 1
         location = (location + right) % line_len
-
 
     return trees
 
