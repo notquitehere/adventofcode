@@ -60,7 +60,6 @@ def part2(data):
 
 
 if __name__ == "__main__":
-    # acc, loc = part1(ip)
-    # print(acc)
-
+    acc, loc = part1(ip)
+    print(acc)
     print(part2(ip))
