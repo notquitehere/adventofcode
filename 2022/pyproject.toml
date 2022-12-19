@@ -5,7 +5,6 @@ description = "Advent of Code 2022"
 authors = ["tamarisk <me@tamarisk.it>"]
 readme = "README.md"
 packages = [
-    { include = "elves" },
     ]
 
 [tool.poetry.dependencies]
