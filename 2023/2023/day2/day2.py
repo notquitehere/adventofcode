@@ -40,7 +40,7 @@ def part2(test: bool = False):
     total = 0
 
     for line in ip:
-        id, tries = line.split(":")
+        tries = line.split(":")[-1]
         min_contents = {
             "red": 0,
             "green": 0,
