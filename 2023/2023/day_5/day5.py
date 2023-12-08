@@ -1,8 +1,8 @@
-from ..elves.elves import get_input
+from elves.elves import Elves
 
 
 def part1(test: bool):
-    ip = get_input(5, test)
+    ip = Elves.get_input(5, test)
     closest = None
     seeds = [int(i) for i in ip[0].split(":")[-1].split()]
     maps = []
@@ -29,7 +29,11 @@ def part1(test: bool):
 
 
 def part2(test: bool):
-    ip = get_ip(test)
+    """
+    Note: This is a really clunky way to do this but it works. It would be
+    interesting to go back at some point and do this "right".
+    """
+    ip = Elves.get_input(5, test)
     closest = None
     seeds = [int(i) for i in ip[0].split(":")[-1].split()]
     seeds = [seeds[i:i+2] for i in range(0, len(seeds), 2)]
@@ -58,6 +62,6 @@ def part2(test: bool):
 
 
 if __name__ == "__main__":
-    test = False
-    # part1(test)
+    test = True
+    part1(test)
     part2(test)

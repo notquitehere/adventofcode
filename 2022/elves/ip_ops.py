@@ -11,7 +11,7 @@ class IPOps:
         with open(f"{file_name}", 'r') as f:
             self.ip = [i.strip('\n') for i in f]
         
-        if "test" in file_name and "," in self.ip[0]:
+        if "test" in file_name and "," in self.ip[0] and not "[" in self.ip[0]:
             ip, exp_p1, exp_p2 = [], [], []
             for item in self.ip:
                 ip_string, p1, p2 = item.split(",")
