@@ -60,5 +60,5 @@ def part2(test: bool = False):
 
 if __name__ == "__main__":
     test = False
-    # part1(test)
+    part1(test)
     part2(test)
