@@ -41,6 +41,36 @@ class Elves:
                         "KK677 28",
                         "KTJJT 220",
                         "QQQJA 483"
+                    ], [[
+                        "RL",
+                        "AAA = (BBB, CCC)",
+                        "BBB = (DDD, EEE)",
+                        "CCC = (ZZZ, GGG)",
+                        "DDD = (DDD, DDD)",
+                        "EEE = (EEE, EEE)",
+                        "GGG = (GGG, GGG)",
+                        "ZZZ = (ZZZ, ZZZ)"
+                    ],
+                    [
+                        "LLR",
+                        "AAA = (BBB, BBB)",
+                        "BBB = (AAA, ZZZ)",
+                        "ZZZ = (ZZZ, ZZZ)"
+                    ],
+                    [
+                        "LR",
+                        "11A = (11B, XXX)",
+                        "11B = (XXX, 11Z)",
+                        "11Z = (11B, XXX)",
+                        "22A = (22B, XXX)",
+                        "22B = (22C, 22C)",
+                        "22C = (22Z, 22Z)",
+                        "22Z = (22B, 22B)",
+                        "XXX = (XXX, XXX)"
+                    ]], [
+                        "0 3 6 9 12 15",
+                        "1 3 6 10 15 21",
+                        "10 13 16 21 30 45"
                     ]]
         if test:
             return test_ip[day-1]
